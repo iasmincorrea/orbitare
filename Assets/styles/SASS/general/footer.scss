@@ -1,0 +1,15 @@
+.footer {
+    .footer-copy {
+        padding-bottom: 60px;
+        color: var(--default-white);
+        font-weight: 400;
+
+        @include device(desktop) {
+            font-size: 24px;
+        }
+
+        @include device(mobile) {
+            font-size: 20px;
+        }
+    }
+}

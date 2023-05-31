@@ -1,0 +1,151 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    background: var(--background);
+    z-index: 9;
+
+    @include device(desktop) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        opacity: 0.9;
+    }
+
+    @include device(mobile) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    &.header-open {
+        .menu-image__open {
+            display: block !important;
+        }
+
+        .menu-image__closed {
+            display: none;
+        }
+    }
+
+    .header-logo__image {
+        @include device(desktop) {
+            max-width: 190px;
+        }
+
+        @include device(mobile) {
+            max-width: 110px;
+        }
+    }
+
+    .header-columns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .menu {
+            @include device(mobile) {
+                opacity: 0;
+                visibility: hidden;
+                background: var(--background);
+                height: 100%;
+                width: 100%;
+                position: fixed;
+                top: 57px;
+                left: 0;
+                z-index: 9;
+                transition: .2s linear;
+
+                &.menu-open {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            .menu-items {
+                display: flex;
+
+                @include device(desktop) {
+                    align-items: center;
+                    gap: 50px;
+                }
+
+                @include device(mobile) {
+                    flex-direction: column;
+                }
+
+                .menu-item__title {
+                    font-size: 18px;
+                    color: var(--default-white);
+                    font-weight: 400;
+                    transition: .2s linear;
+                    position: relative;
+                    display: block;
+
+                    @include device(desktop) {
+                        &:hover {
+                            &:after {
+                                width: 100%;
+                            }
+                        }
+
+                        &:after {
+                            content: "";
+                            height: 3px;
+                            width: 0;
+                            position: absolute;
+                            display: block;
+                            background: var(--primary);
+                            border-radius: 5px;
+                            transition: .2s linear;
+                        }
+                    }
+
+                    @include device(mobile) {
+                        display: block;
+                        padding: 12px 15px;
+                    }
+
+                    &.background-title {
+                        background-color: var(--primary);
+                        border-radius: 5px;
+                        padding: 10px 15px;
+                        max-width: fit-content;
+
+                        @include device(desktop) {
+                            &:hover {
+                                color: var(--default-white);
+                                background: var(--secondary);
+                            }
+
+                            &:after {
+                                display: none;
+                            }
+                        }
+
+                        @include device(mobile) {
+                            margin: 12px 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-menu {
+            @include device(desktop) {
+                display: none;
+            }
+
+            @include device(mobile) {
+                background: transparent;
+                border: none;
+                padding: 0;
+
+                .header-menu__image {
+
+                    &.menu-image__open {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

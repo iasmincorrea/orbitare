@@ -1,0 +1,25 @@
+body {
+    background-color: var(--background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+    width: calc(100% - 30px);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: var(--primary);
+    font-weight: 700;
+    padding-bottom: 30px;
+
+    @include device(desktop) {
+        font-size: 26px;
+    }
+
+    @include device(mobile) {
+        font-size: 20px;
+    }
+}

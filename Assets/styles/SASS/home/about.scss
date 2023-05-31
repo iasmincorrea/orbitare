@@ -1,0 +1,28 @@
+.about {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-image: url("/Assets/img/background.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 40%;
+
+    @include device(desktop) {
+        padding: 175px 0;
+    }
+
+    .about-text {
+        color: var(--default-white);
+        font-weight: 300;
+        max-width: 800px;
+
+        @include device(desktop) {
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        @include device(mobile) {
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+}

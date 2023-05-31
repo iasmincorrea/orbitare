@@ -351,7 +351,7 @@ body {
 }
 
 .banner-main {
-  background-image: url("./Assets/img/background-main.png");
+  background-image: url("../img/background-main.webp");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -443,7 +443,7 @@ body {
 .about {
   margin-top: 80px;
   margin-bottom: 80px;
-  background-image: url("./Assets/img/background.png");
+  background-image: url("../img/background-about.webp");
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 40%;

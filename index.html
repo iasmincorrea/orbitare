@@ -15,10 +15,6 @@
     <link rel="stylesheet" type="text/css" href="./Assets/styles/theme.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 
 <body id="body">
@@ -60,9 +56,15 @@
     <main>
         <section class="banner-main">
             <div class="content">
-                <p class="banner-main__title">Bem vindo a Orbitare!</p>
-                <h1 class="banner-main__subtitle">Design e desenvolvimento de <span>produtos digitais</span> de forma ágil, consistente e insana!</h1>
-                <a class="banner-main__href" href="/#fale-conosco">Comece um projeto</a>
+                <img class="banner-icon banner-icon__left" src="./Assets/img/icon-main.png">
+                <img class="banner-icon banner-icon__right" src="./Assets/img/icon-main2.png">
+
+                <div class="banner-main__container">
+                    <h1 class="banner-main__title">Voe Alto com a Orbitare: A agência de web design que fará seu site alcançar o Espaço!</h1>
+                    <p class="banner-main__texts">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                    <a class="banner-main__href" href="#fale-conosco">Iniciar Agora</a>
+                </div>
             </div>
         </section>
 
@@ -74,54 +76,11 @@
             </p>
         </section>
 
-        <!-- <section class="steps content" id="etapas">
-            <h2 class="section-title">O que fazemos</h2>
-            
-            <ul class="steps-columns">
-                <li class="step active" onclick="showDescription(1)">
-                    <p>01. Start</p>
-
-                    <div id="description1" class="description active">
-                        <p>Na nossa agência, entendemos que o início é fundamental para o sucesso do projeto! Durante essa fase, estabelecemos uma comunicação próxima, realizamos reuniões e elaboramos um briefing completo, garantindo que todas as informações essenciais sejam capturadas para desenvolver um projeto que atenda às necessidades reais da sua empresa.</p>
-                    </div>
-                </li>
-                <span class="step-arrow"></span>
-                <li class="step" onclick="showDescription(2)">
-                    <p>02. Design</p>
-
-                    <div id="description2" class="description">
-                        <p>Nossa abordagem nessa etapa é dividida em duas partes fundamentais: o wireframe, que consiste em um desenho de baixa fidelidade para validar a estrutura das páginas, e o layout, onde aplicamos as melhores práticas para criar soluções visuais que se adaptam tanto a telas grandes quanto a dispositivos menores. Dessa forma, garantimos uma experiência consistente e intuitiva em todas as plataformas.</p>
-                    </div>
-                </li>
-                <span class="step-arrow"></span>
-                <li class="step" onclick="showDescription(3)">
-                    <p>03. Code</p>
-
-                    <div id="description3" class="description">
-                        <p>Nosso compromisso é concluir o projeto exatamente como foi planejado e aprovado pelos nossos clientes. Dedicamos atenção especial à performance do usuário, garantindo que os objetivos dos nossos clientes sejam alcançados de forma eficiente e satisfatória.</p>
-                    </div>
-                </li>
-                <span class="step-arrow"></span>
-                <li class="step" onclick="showDescription(4)">
-                    <p>04. Go Live!</p>
-
-                    <div id="description4" class="description">
-                        <p>Sabemos que o trabalho não acaba na entrega! Estamos cientes de que o mercado está em constante evolução, assim como o design e as tecnologias. Por isso, estamos prontos para acompanhar essa transformação ao seu lado e manter seus projetos sempre atualizados. Com o compromisso de estar em sintonia com as tendências e inovações, vamos juntos para garantir que a força esteja conosco!</p>
-                    </div>
-                </li>
-            </ul>
-
-            <div class="navigation">
-                <button onclick="navigate(-1)">&#8592; Anterior</button>
-                <button onclick="navigate(1)">Próximo &#8594;</button>
-            </div>
-        </section> -->
-
         <section class="services content">
             <div class="services-column__text">
                 <h2 class="services-title"><span>Caminho Estelar:</span> Guiando sua jornada rumo ao sucesso</h2>
                 <p class="services-description">
-                    Somos especialistas em criar sites institucionais e e-commerces que irão impulsionar o crescimento do seu negócio. 
+                    Somos especialistas em criar e-commerces e sites institucionais que irão impulsionar o crescimento do seu negócio. 
                     <br><br>Com o uso das plataformas Mercado Shops e Store Front, oferecemos soluções completas para que sua presença digital brilhe no universo virtual.
                 </p>
             </div>
@@ -144,7 +103,7 @@
                 <div class="services-item">
                     <p class="services-item__title services-icon__start"><span>03.</span> Code</p>
                     <p class="services-item__text">
-                        Com maestria e inovação, nossa equipe de desenvolvimento navega pelos caminhos do código, sendo desenvolvido com precisão para refletir o layout de forma impecável!
+                        Com maestria e inovação, nossa equipe de desenvolvimento navega pelos caminhos do código na velocidade da luz, sendo desenvolvido com precisão para refletir o layout de forma impecável!
                     </p>
                 </div>
                 <div class="services-item">
@@ -184,11 +143,8 @@
     </footer>
 
     <script src="./Assets/JS/loading.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./Assets/JS/header/menu.js"></script>
     <script src="./Assets/JS/services.js"></script>
-    <script src="./Assets/JS/steps.js"></script>
     <script src="./Assets/JS/form.js"></script>
 </body>
 </html>

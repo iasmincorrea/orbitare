@@ -11,7 +11,13 @@
     justify-content: center;
 
     svg {
-        max-width: 200px;
+        @include device(desktop) {
+            max-width: 200px;
+        }
+
+        @include device(mobile) {
+            max-width: 100px;
+        }
 
         @keyframes spin {
             0% {

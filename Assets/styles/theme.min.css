@@ -488,7 +488,7 @@ body {
 }
 
 .about {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   background-image: url("../img/background-about.webp");
   background-repeat: no-repeat;
   background-position: right top;
@@ -496,7 +496,7 @@ body {
 }
 @media screen and (min-width: 1026px) {
   .about {
-    padding: 185px 0;
+    padding: 190px 0;
   }
 }
 .about .section-title {
@@ -535,8 +535,8 @@ body {
 }
 
 .contact {
-  padding-bottom: 80px;
-  padding-top: 80px;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 @media screen and (min-width: 1026px) {
   .contact {
@@ -545,8 +545,6 @@ body {
   }
 }
 .contact .contact-column {
-  max-width: 750px;
-  margin: 0 auto;
   background: rgb(32, 32, 36);
   border-radius: 5px;
   position: relative;
@@ -554,6 +552,8 @@ body {
 @media screen and (min-width: 1026px) {
   .contact .contact-column {
     padding: 50px;
+    max-width: 750px;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 1025px) {

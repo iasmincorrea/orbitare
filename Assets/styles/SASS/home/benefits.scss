@@ -1,0 +1,107 @@
+.benefits {
+    margin-bottom: 100px;
+    position: relative;
+
+    .benefits-image {
+
+        @include device(desktop) {
+            position: absolute;
+            top: -345px;
+            max-width: 500px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            left: -160px;
+        }
+
+        @media screen and (min-width: 1026px) and (max-width: 1439px) {
+            left: -320px;
+        }
+
+        @include device(mobile) {
+            display: none;
+        }
+    }
+
+    .benefits-column__text {
+        margin: 0 auto 20px auto;
+
+        @include device(desktop) {
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .benefits-title {
+            color: var(--default-white);
+            font-weight: 800;
+
+            @include device(desktop) {
+                font-size: 38px;
+                line-height: 42px;
+            }
+
+            @include device(mobile) {
+                font-size: 28px;
+                line-height: 34px;
+            }
+
+            span {
+                color: var(--primary);
+            }
+        }
+    }
+
+    .benefits-column__items {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .benefits-item {
+            background: rgb(32, 32, 36);
+            border-radius: 5px;
+
+            @include device(desktop) {
+                padding: 30px;
+                width: calc(30% - 20px);
+            }
+
+            @include device(mobile) {
+                padding: 20px;
+            }
+
+            .benefits-item__title {
+                color: var(--default-white);
+                font-weight: 800;
+                padding-bottom: 15px;
+
+                @include device(desktop) {
+                    font-size: 28px;
+                }
+
+                @include device(mobile) {
+                    font-size: 20px;
+                }
+
+                span {
+                    color: var(--primary);
+                }
+            }
+
+            .benefits-item__text {
+                color: var(--default-white);
+                font-weight: 400;
+
+                @include device(desktop) {
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+
+                @include device(mobile) {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

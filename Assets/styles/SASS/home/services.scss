@@ -97,6 +97,9 @@
             }
 
             .services-item__text {
+                color: var(--default-black);
+                font-weight: 400;
+
                 @include device(desktop) {
                     font-size: 18px;
                     line-height: 26px;

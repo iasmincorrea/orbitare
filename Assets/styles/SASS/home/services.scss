@@ -58,7 +58,7 @@
         }
 
         .services-item {
-            background: #c1dbff;
+            background: rgb(32, 32, 36);
             border-radius: 5px;
             margin-bottom: 20px;
 
@@ -79,7 +79,7 @@
             }
 
             .services-item__title {
-                color: var(--background);
+                color: var(--default-white);
                 font-weight: 800;
                 padding-bottom: 15px;
 
@@ -97,7 +97,7 @@
             }
 
             .services-item__text {
-                color: var(--default-black);
+                color: var(--default-white);
                 font-weight: 400;
 
                 @include device(desktop) {

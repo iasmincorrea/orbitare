@@ -9,7 +9,7 @@
     }
 
     .contact-column {
-        background: rgb(32, 32, 36);
+        background: var(--background-light);
         border-radius: 5px;
         position: relative;
 
@@ -60,7 +60,7 @@
         }
 
         .contact-text {
-            color: #707070;
+            color: var(--gray);
             font-weight: 600;
 
             @include device(desktop) {

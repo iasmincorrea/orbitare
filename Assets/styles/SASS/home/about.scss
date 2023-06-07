@@ -1,12 +1,18 @@
 .about {
-    margin-bottom: 100px;
     background-image: url("../img/background-about.webp");
     background-repeat: no-repeat;
-    background-position: right top;
     background-size: 40%;
 
     @include device(desktop) {
+        margin-top: 150px;
         padding: 190px 0;
+        background-position: right top;
+    }
+
+    @include device(mobile) {
+        margin-top: 30px;
+        padding-top: 70px;
+        background-position: right center;
     }
 
     .section-title {

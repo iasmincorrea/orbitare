@@ -25,11 +25,19 @@
         }
 
         .benefits-subtitle {
-            font-size: 26px;
-            line-height: 28px;
             color: var(--default-white);
             font-weight: 300;
             padding-top: 5px;
+
+            @include device(desktop) {
+                font-size: 26px;
+                line-height: 28px;
+            }
+
+            @include device(mobile) {
+                font-size: 20px;
+                line-height: 22px;
+            }
         }
     }
 

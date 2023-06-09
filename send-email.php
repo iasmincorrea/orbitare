@@ -19,10 +19,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mensagem = 'erro';
     }
 }
-
-if ($mensagem === 'sucesso') {
-    echo '<div class="mensagem-sucesso">O email foi enviado com sucesso.</div>';
-} elseif ($mensagem === 'erro') {
-    echo '<div class="mensagem-erro">Ocorreu um erro ao enviar o email.</div>';
-}
 ?>

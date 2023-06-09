@@ -722,6 +722,20 @@ body {
     font-size: 16px;
   }
 }
+.contact .mensagem-erro {
+  font-size: 16px;
+  font-weight: 300;
+  color: red;
+  padding-top: 10px;
+  text-align: center;
+}
+.contact .mensagem-sucesso {
+  font-size: 16px;
+  font-weight: 700;
+  color: green;
+  padding-top: 10px;
+  text-align: center;
+}
 
 .services {
   display: flex;

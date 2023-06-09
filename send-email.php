@@ -1,4 +1,7 @@
 <?php
+$nome = $email = $telefone = $empresa = "";
+$mensagem = "";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
@@ -7,12 +10,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $to = 'contato@orbitaresolutions.com.br';
     $subject = 'Formulário do site';
-    $message = "Nome: $nome\n\nEmail: $email\n\nTelefone: $mensagem\n\nEmpresa: $empresa";
+    $message = "Nome: $nome\n\nEmail: $email\n\nTelefone: $telefone\n\nEmpresa: $empresa";
 
     if (mail($to, $subject, $message)) {
-        echo 'sucesso';
+        $mensagem = 'sucesso';
+        $nome = $email = $telefone = $empresa = "";
     } else {
-        echo 'erro';
+        $mensagem = 'erro';
     }
+}
+
+if ($mensagem === 'sucesso') {
+    echo '<div class="mensagem-sucesso">O email foi enviado com sucesso.</div>';
+} elseif ($mensagem === 'erro') {
+    echo '<div class="mensagem-erro">Ocorreu um erro ao enviar o email.</div>';
 }
 ?>

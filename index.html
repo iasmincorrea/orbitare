@@ -169,10 +169,10 @@
                 <p class="contact-description">Queremos saber um pouco mais sobre você e seu negócio.</p>
 
                 <form id="form" class="form" action="send-email.php" method="post" autocomplete="off">
-                    <input type="text" name="nome" placeholder="Seu nome" value="<?php echo $nome; ?>" required class="form-field form-field__required">
-                    <input type="text" name="email" placeholder="Seu e-mail" value="<?php echo $email; ?>" required class="form-field form-field__required">
-                    <input type="tel" name="telefone" placeholder="Seu telefone" value="<?php echo $telefone; ?>" required class="form-field form-field__required">
-                    <input type="text" name="empresa" placeholder="Sua empresa" value="<?php echo $empresa; ?>" required class="form-field form-field__required">
+                    <input type="text" name="nome" placeholder="Seu nome" required class="form-field form-field__required">
+                    <input type="text" name="email" placeholder="Seu e-mail" required class="form-field form-field__required">
+                    <input type="tel" name="telefone" placeholder="Seu telefone" required class="form-field form-field__required">
+                    <input type="text" name="empresa" placeholder="Sua empresa" required class="form-field form-field__required">
     
                     <button class="form-button__submit" type="submit">Enviar</button>
                 </form>
